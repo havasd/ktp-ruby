@@ -17,9 +17,9 @@
 
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 	"hungarian-pre": function ( a ) {
-		var special_letters = { 'á':'az', 'é':'ez', 'í':'iz', 'ó':'oz', 'ö':'ozz', 'ő':'ozz', 'ú':'uz', 'ü':'uzz', 'ű':'uzz', 'cs':'cz', 'zs':'zz', 
+		var special_letters = { 'á':'az', 'é':'ez', 'í':'iz', 'ó':'oz', 'ö':'ozz', 'ő':'ozz', 'ú':'uz', 'ü':'uzz', 'ű':'uzzz', 'cs':'cz', 'zs':'zz', 
    'ccs':'czcz', 'ggy':'gzgz', 'lly':'lzlz', 'nny':'nznz', 'ssz':'szsz', 'tty':'tztz', 'zzs':'zzzz', 'Á':'az', 'É':'ez', 'Í':'iz', 
-   'Ó':'oz', 'Ö':'ozz', 'Ő':'ozz', 'Ú':'uz', 'Ü':'uzz', 'Ű':'uzz', 'Cs':'cz', 'Zz':'zz', 'Ccs':'czcz', 'Ggy':'gzgz', 'Lly':'lzlz', 
+   'Ó':'oz', 'Ö':'ozz', 'Ő':'ozz', 'Ú':'uz', 'Ü':'uzz', 'Ű':'uzzz', 'Cs':'cz', 'Zz':'zz', 'Ccs':'czcz', 'Ggy':'gzgz', 'Lly':'lzlz', 
    'Nny':'nznz', 'Ssz':'szsz', 'Tty':'tztz', 'Zzs':'zzzz'};
         for (var val in special_letters)
            a = a.split(val).join(special_letters[val]);
@@ -33,5 +33,5 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 
 	"hungarian-desc": function ( a, b ) {
 		return ((a < b) ? 1 : ((a > b) ? -1 : 0));
-	}   
+	}
 } );
