@@ -6,6 +6,7 @@ gem 'rails', '4.1.6'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'pg'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
