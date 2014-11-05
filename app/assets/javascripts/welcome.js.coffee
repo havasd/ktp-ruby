@@ -4,6 +4,6 @@
 jQuery ->
   $('#persons').dataTable( {
     "columnDefs": [
-        { "type": "hungarian", targets: [0, 1] }
+        { "type": "hungarian", targets: 0 }
     ]
   });
