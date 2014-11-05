@@ -21,9 +21,9 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
    'ccs':'czcz', 'ggy':'gzgz', 'lly':'lzlz', 'nny':'nznz', 'ssz':'szsz', 'tty':'tztz', 'zzs':'zzzz', 'Á':'az', 'É':'ez', 'Í':'iz', 
    'Ó':'oz', 'Ö':'ozz', 'Ő':'ozz', 'Ú':'uz', 'Ü':'uzz', 'Ű':'uzzz', 'Cs':'cz', 'Zz':'zz', 'Ccs':'czcz', 'Ggy':'gzgz', 'Lly':'lzlz', 
    'Nny':'nznz', 'Ssz':'szsz', 'Tty':'tztz', 'Zzs':'zzzz'};
+        a = a.toLowerCase();
         for (var val in special_letters)
            a = a.split(val).join(special_letters[val]);
-        a = a.toLowerCase();
         return a;
 	},
 
